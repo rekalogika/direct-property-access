@@ -1,0 +1,32 @@
+{
+    "name": "rekalogika/direct-property-access",
+    "description": "Simple implementation of PropertyAccessor that reads and writes directly to the object's properties, bypassing getters and setters.",
+    "type": "symfony-bundle",
+    "autoload": {
+        "psr-4": {
+            "Rekalogika\\DirectPropertyAccess\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Priyadi Iman Nurcahyo",
+            "email": "priyadi@rekalogika.com"
+        }
+    ],
+    "require": {
+        "symfony/property-access": "^6.0"
+    },
+    "require-dev": {
+        "symfony/config": "^6.0",
+        "symfony/dependency-injection": "^6.0",
+        "symfony/http-kernel": "^6.0",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^5.15"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1-dev"
+        }
+    }
+}
