@@ -13,6 +13,7 @@ namespace Rekalogika\DirectPropertyAccess;
 
 use Symfony\Component\PropertyAccess\Exception\InvalidArgumentException;
 use Symfony\Component\PropertyAccess\Exception\NoSuchPropertyException;
+use Symfony\Component\PropertyAccess\Exception\UninitializedPropertyException;
 use Symfony\Component\PropertyAccess\PropertyAccessorInterface;
 use Symfony\Component\PropertyAccess\PropertyPathInterface;
 
@@ -54,6 +55,18 @@ class DirectPropertyAccessor implements PropertyAccessorInterface
                 ->getReflectionProperty($objectOrArray, $propertyPath);
 
             return $reflectionProperty->getValue($objectOrArray);
+        } catch (\Error $e) {
+            // handle uninitialized properties in PHP >= 7.4
+            if (preg_match('/^Typed property ([\w\\\\@]+)::\$(\w+) must not be accessed before initialization$/', $e->getMessage(), $matches)) {
+                $class = str_contains($matches[1], '@anonymous') ? $objectOrArray::class : $matches[1];
+                assert(class_exists($class));
+                $r = new \ReflectionProperty($class, $matches[2]);
+                $type = ($type = $r->getType()) instanceof \ReflectionNamedType ? $type->getName() : (string) $type;
+
+                throw new UninitializedPropertyException(sprintf('The property "%s::$%s" is not readable because it is typed "%s". You should initialize it or declare a default value instead.', $matches[1], $r->getName(), $type), 0, $e);
+            }
+
+            throw $e;
         } catch (\ReflectionException $e) {
             throw new InvalidArgumentException($e->getMessage(), $e->getCode(), $e);
         }

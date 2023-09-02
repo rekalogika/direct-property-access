@@ -20,6 +20,7 @@
     <issueHandlers>
         <MethodSignatureMismatch errorLevel="info" />
         <PropertyNotSetInConstructor errorLevel="info" />
+        <MissingConstructor errorLevel="info" />
     </issueHandlers>
 
     <plugins>

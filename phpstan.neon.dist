@@ -4,3 +4,6 @@ parameters:
         - src
         - tests
         - config
+    ignoreErrors:
+        - '#Property Rekalogika\\DirectPropertyAccess\\Tests\\Stub::\$property is never read#'
+        - '#Property Rekalogika\\DirectPropertyAccess\\Tests\\Stub::\$unsetProperty is unused#'

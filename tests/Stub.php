@@ -13,7 +13,8 @@ namespace Rekalogika\DirectPropertyAccess\Tests;
 
 class Stub
 {
-    private ?string $property = null;  // @phpstan-ignore-line
+    private ?string $property = null;
+    private string $unsetProperty;
 
     public function getProperty(): string
     {
