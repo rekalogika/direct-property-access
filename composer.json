@@ -8,6 +8,11 @@
             "Rekalogika\\DirectPropertyAccess\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Rekalogika\\DirectPropertyAccess\\Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Priyadi Iman Nurcahyo",
