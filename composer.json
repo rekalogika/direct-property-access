@@ -28,7 +28,8 @@
         "symfony/http-kernel": "^6.0",
         "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^9.5",
-        "vimeo/psalm": "^5.15"
+        "vimeo/psalm": "^5.15",
+        "psalm/plugin-phpunit": "^0.18.4"
     },
     "extra": {
         "branch-alias": {
