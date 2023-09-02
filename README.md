@@ -12,7 +12,7 @@ composer require rekalogika/direct-property-access
 Usage
 -----
 
-In Symfony projects you can autowire `DirectPropertyAccessor`. In other
+In Symfony projects, you can autowire `DirectPropertyAccessor`. In other
 projects, you can simply instantiate it.
 
 See [Symfony's PropertyAccess
@@ -25,3 +25,12 @@ Caveats
 -------
 
 Currently does not support arrays and paths beyond one level deep.
+
+Credits
+-------
+
+This project took inspiration from the following projects.
+
+* [Symfony Property Access](https://github.com/symfony/property-access)
+* [kwn/reflection-property-access](https://github.com/kwn/reflection-property-access)
+* [nelmio/alice](https://github.com/nelmio/alice/blob/master/src/PropertyAccess/ReflectionPropertyAccessor.php)
