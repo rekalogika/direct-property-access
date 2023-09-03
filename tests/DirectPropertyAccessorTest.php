@@ -16,7 +16,7 @@ use Rekalogika\DirectPropertyAccess\DirectPropertyAccessor;
 use Symfony\Component\PropertyAccess\Exception\NoSuchPropertyException;
 use Symfony\Component\PropertyAccess\Exception\UninitializedPropertyException;
 
-class PropertyAccessorTest extends TestCase
+class DirectPropertyAccessorTest extends TestCase
 {
     private DirectPropertyAccessor $propertyAccessor;
 
