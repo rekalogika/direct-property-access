@@ -9,7 +9,7 @@
  * that was distributed with this source code.
  */
 
-namespace Rekalogika\DirectPropertyAccess\Symfony;
+namespace Rekalogika\DirectPropertyAccess;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

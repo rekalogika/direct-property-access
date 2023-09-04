@@ -1,6 +1,6 @@
 {
     "name": "rekalogika/direct-property-access",
-    "description": "Simple implementation of PropertyAccessor that reads and writes directly to the object's properties, bypassing getters and setters.",
+    "description": "Simple implementation of PropertyAccessorInterface that reads and writes directly to the object's properties, bypassing getters and setters.",
     "type": "symfony-bundle",
     "license": "MIT",
     "autoload": {

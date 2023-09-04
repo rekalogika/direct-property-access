@@ -9,7 +9,7 @@
  * that was distributed with this source code.
  */
 
-namespace Rekalogika\DirectPropertyAccess\Symfony\DependencyInjection;
+namespace Rekalogika\DirectPropertyAccess\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

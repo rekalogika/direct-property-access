@@ -11,7 +11,7 @@
 
 namespace Rekalogika\DirectPropertyAccess\Tests;
 
-use Rekalogika\DirectPropertyAccess\Symfony\RekalogikaDirectPropertyAccessBundle;
+use Rekalogika\DirectPropertyAccess\RekalogikaDirectPropertyAccessBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpKernel\Kernel;
 
