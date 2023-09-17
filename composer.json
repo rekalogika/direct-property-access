@@ -27,7 +27,7 @@
         "symfony/dependency-injection": "^6.1",
         "symfony/http-kernel": "^6.1",
         "phpstan/phpstan": "^1.10",
-        "phpunit/phpunit": "^9.5",
+        "phpunit/phpunit": "^9.6",
         "vimeo/psalm": "^5.15",
         "psalm/plugin-phpunit": "^0.18.4",
         "symfony/phpunit-bridge": "^6.1"
