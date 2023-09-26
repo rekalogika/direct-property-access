@@ -34,3 +34,8 @@ This project took inspiration from the following projects.
 * [Symfony Property Access](https://github.com/symfony/property-access)
 * [kwn/reflection-property-access](https://github.com/kwn/reflection-property-access)
 * [nelmio/alice](https://github.com/nelmio/alice/blob/master/src/PropertyAccess/ReflectionPropertyAccessor.php)
+
+## Contributing
+
+Issues and pull requests should be filed in the GitHub repository
+[rekalogika/direct-property-access](https://github.com/rekalogika/direct-property-access).
