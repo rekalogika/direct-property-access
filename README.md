@@ -23,10 +23,6 @@ $propertyAccessor->setValue($person, 'name', 'John');
 
 [rekalogika.dev/direct-property-access](https://rekalogika.dev/direct-property-access)
 
-## License
-
-MIT
-
 ## Credits
 
 This project took inspiration from the following projects.
@@ -34,6 +30,10 @@ This project took inspiration from the following projects.
 * [Symfony Property Access](https://github.com/symfony/property-access)
 * [kwn/reflection-property-access](https://github.com/kwn/reflection-property-access)
 * [nelmio/alice](https://github.com/nelmio/alice/blob/master/src/PropertyAccess/ReflectionPropertyAccessor.php)
+
+## License
+
+MIT
 
 ## Contributing
 
