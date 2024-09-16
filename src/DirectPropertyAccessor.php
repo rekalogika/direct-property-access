@@ -36,7 +36,7 @@ class DirectPropertyAccessor implements PropertyAccessorInterface
             throw new InvalidArgumentException('Array is not supported in this implementation of PropertyAccessorInterface');
         }
 
-        if (strpbrk((string) $propertyPath, '.[?')) {
+        if (strpbrk((string) $propertyPath, '.[?') !== false) {
             throw new InvalidArgumentException('Multi-step property path is not supported in this implementation of PropertyAccessorInterface');
         }
     }
