@@ -146,7 +146,6 @@ class DirectPropertyAccessor implements PropertyAccessorInterface
                 && false === $reflectionClass->getProperty($propertyPath)->isStatic()
             ) {
                 $reflectionProperty = $reflectionClass->getProperty($propertyPath);
-                $reflectionProperty->setAccessible(true);
 
                 return $reflectionProperty;
             }
