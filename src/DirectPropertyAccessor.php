@@ -22,7 +22,7 @@ use Symfony\Component\PropertyAccess\PropertyPathInterface;
  * directly to the object's properties. Does not support arrays and multistep
  * paths.
  */
-final readonly class DirectPropertyAccessor implements PropertyAccessorInterface
+final class DirectPropertyAccessor implements PropertyAccessorInterface
 {
     /**
      * @param object|array<array-key,mixed> $objectOrArray
