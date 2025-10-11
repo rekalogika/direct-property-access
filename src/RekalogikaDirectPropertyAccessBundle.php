@@ -13,6 +13,6 @@ namespace Rekalogika\DirectPropertyAccess;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class RekalogikaDirectPropertyAccessBundle extends Bundle
+final class RekalogikaDirectPropertyAccessBundle extends Bundle
 {
 }

@@ -14,7 +14,7 @@ namespace Rekalogika\DirectPropertyAccess\Tests;
 use PHPUnit\Framework\TestCase;
 use Rekalogika\DirectPropertyAccess\DirectPropertyAccessor;
 
-class BundleTest extends TestCase
+final class BundleTest extends TestCase
 {
     public function testServiceWiring(): void
     {

@@ -16,10 +16,11 @@ use Rekalogika\DirectPropertyAccess\DirectPropertyAccessor;
 use Symfony\Component\PropertyAccess\Exception\NoSuchPropertyException;
 use Symfony\Component\PropertyAccess\Exception\UninitializedPropertyException;
 
-class DirectPropertyAccessorTest extends TestCase
+final class DirectPropertyAccessorTest extends TestCase
 {
     private DirectPropertyAccessor $propertyAccessor;
 
+    #[\Override]
     public function setUp(): void
     {
         $this->propertyAccessor = new DirectPropertyAccessor();
