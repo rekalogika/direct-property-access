@@ -11,8 +11,11 @@
 
 namespace Rekalogika\DirectPropertyAccess\Tests;
 
-class Stub
+final class Stub
 {
+    /**
+     * @phpstan-ignore property.unusedType
+     */
     private ?string $property = null;
     private string $unsetProperty;
 

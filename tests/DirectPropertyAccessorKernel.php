@@ -15,8 +15,9 @@ use Rekalogika\DirectPropertyAccess\RekalogikaDirectPropertyAccessBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpKernel\Kernel;
 
-class DirectPropertyAccessorKernel extends Kernel
+final class DirectPropertyAccessorKernel extends Kernel
 {
+    #[\Override]
     public function registerBundles(): iterable
     {
         return [
@@ -24,6 +25,7 @@ class DirectPropertyAccessorKernel extends Kernel
         ];
     }
 
+    #[\Override]
     public function registerContainerConfiguration(LoaderInterface $loader): void
     {
     }

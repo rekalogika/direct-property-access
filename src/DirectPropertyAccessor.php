@@ -22,7 +22,7 @@ use Symfony\Component\PropertyAccess\PropertyPathInterface;
  * directly to the object's properties. Does not support arrays and multistep
  * paths.
  */
-class DirectPropertyAccessor implements PropertyAccessorInterface
+final class DirectPropertyAccessor implements PropertyAccessorInterface
 {
     /**
      * @param object|array<array-key,mixed> $objectOrArray
@@ -44,6 +44,7 @@ class DirectPropertyAccessor implements PropertyAccessorInterface
     /**
      * @param object|array<array-key,mixed> $objectOrArray
      */
+    #[\Override]
     public function getValue(
         object|array $objectOrArray,
         string|PropertyPathInterface $propertyPath
@@ -74,7 +75,9 @@ class DirectPropertyAccessor implements PropertyAccessorInterface
 
     /**
      * @param object|array<array-key,mixed> $objectOrArray
+     * @param-out object $objectOrArray
      */
+    #[\Override]
     public function setValue(
         object|array &$objectOrArray,
         string|PropertyPathInterface $propertyPath,
@@ -95,6 +98,7 @@ class DirectPropertyAccessor implements PropertyAccessorInterface
     /**
      * @param object|array<array-key,mixed> $objectOrArray
      */
+    #[\Override]
     public function isReadable(
         object|array $objectOrArray,
         string|PropertyPathInterface $propertyPath
@@ -107,6 +111,7 @@ class DirectPropertyAccessor implements PropertyAccessorInterface
     /**
      * @param object|array<array-key,mixed> $objectOrArray
      */
+    #[\Override]
     public function isWritable(
         object|array $objectOrArray,
         string|PropertyPathInterface $propertyPath
