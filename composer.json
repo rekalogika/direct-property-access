@@ -24,7 +24,7 @@
         "symfony/property-access": "^6.1 || ^7.0"
     },
     "require-dev": {
-        "symfony/config": "^6.1 || ^7.0",
+        "symfony/config": "^8.0.0",
         "symfony/dependency-injection": "^6.1 || ^7.0",
         "symfony/http-kernel": "^6.1 || ^7.0",
         "phpstan/phpstan": "^2.1",
