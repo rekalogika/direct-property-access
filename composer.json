@@ -21,17 +21,17 @@
         }
     ],
     "require": {
-        "symfony/property-access": "^6.1 || ^7.0"
+        "symfony/property-access": "^6.1 || ^7.0 || ^8.0"
     },
     "require-dev": {
-        "symfony/config": "^6.1 || ^7.0",
-        "symfony/dependency-injection": "^6.1 || ^7.0",
-        "symfony/http-kernel": "^6.1 || ^7.0",
+        "symfony/config": "^6.1 || ^7.0 || ^8.0",
+        "symfony/dependency-injection": "^6.1 || ^7.0 || ^8.0",
+        "symfony/http-kernel": "^6.1 || ^7.0 || ^8.0",
         "phpstan/phpstan": "^2.1",
         "phpunit/phpunit": "^10.5",
         "vimeo/psalm": "^6.8",
         "psalm/plugin-phpunit": "^0.19.5",
-        "symfony/phpunit-bridge": "^6.1 || ^7.0"
+        "symfony/phpunit-bridge": "^6.1 || ^7.0 || ^8.0"
     },
     "extra": {
         "branch-alias": {
